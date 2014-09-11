@@ -317,7 +317,7 @@ $data=getIntentosRegistro($qr);
 						<td><?=$dat[1]?></td>
 						<td><?=ucwords($usuario[1])?> <?=ucwords($usuario[2])?></td>
 						<TD><?=$fecha_actual?></TD>
-						<TD><input type="button" id="opener" value="Ver Mapa" onclick="limpiarMapa();addMarcador('img/place.png','30,30',<?=$dat[3]?>,<?=$dat[4]?>,'','Intento de Registro');verMarcadores();OpenModal();"></TD>
+						<TD><input type="button" id="opener" value="Ver Mapa" onclick="limpiarMapa();addMarcador('img/place.png','30,30',<?=$dat[3]?>,<?=$dat[4]?>,'','Intento de Registro');verMarcadores();OpenModalMapa();"></TD>
 						
 						
 					</tr>

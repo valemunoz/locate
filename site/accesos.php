@@ -45,6 +45,19 @@ $empresa=getCliente($_SESSION['id_cliente_web']);
         duration: 1000
       }
     });
+    
+     $( "#grilla_mapa" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+    
  
 
   });
@@ -70,14 +83,11 @@ $empresa=getCliente($_SESSION['id_cliente_web']);
 				}
 				);
   			}
-  			function OpenModal()
-  			{
-  				$( "#grilla" ).dialog( "open" );
-  			}
+  			
 		</script>
 		
 		<style>
-			#mapa
+			#map
 				{
 					width:500px !important;
 					height:400px !important;
@@ -119,7 +129,7 @@ $empresa=getCliente($_SESSION['id_cliente_web']);
 		</head>
 	<body>
 		<div class="img_left"><a target=BLANK_ href="http://www.chilemap.cl"><img src="../images/logo_places.png"></a></div>
-			<div class="img_right"><img src="http://locate.chilemap.cl/img_cli/<?=$empresa[2]?>"></div>
+			
 			
 		<div id="contenido">
 			
@@ -175,12 +185,22 @@ include("header.php");
   <div id="mapa">
   </div>
 	</div>
+	
+		<div id="grilla_mapa" title="Datos">
+<div id="map">
+  </div>
+	</div>
+		<div id="output">	
+
+	</div>
 <script>
 	var CM_farma_turno=false;
 	loadLista();
-	init("mapa");
+	init("map");
 	</script>
 	
-	
+	<div id="output">	
+
+	</div>	
 	</body>
 </html>

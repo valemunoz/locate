@@ -32,7 +32,7 @@ $empresa=getCliente($_SESSION['id_cliente_web']);
 	 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	 	
 	 	 	<script src="http://www.chilemap.cl/OpenLayers/OpenLayers.js"></script>
-	 	<script src="http://www.chilemap.cl/js/funciones_api.js"></script>
+	 	<script src="http://www.chilemap.cl/js/funciones_api_v2.js"></script>
     <script type="text/javascript" src="js/jquery.timepicker.js"></script>
   
 
@@ -130,7 +130,7 @@ $empresa=getCliente($_SESSION['id_cliente_web']);
 		</head>
 	<body>
 		<div class="img_left"><a target=BLANK_ href="http://www.chilemap.cl"><img src="../images/logo_places.png"></a></div>
-			<div class="img_right"><img src="http://locate.chilemap.cl/img_cli/<?=$empresa[2]?>"></div>
+			
 			
 		<div id="contenido">
 			
@@ -204,9 +204,12 @@ include("header.php");
 	<div id="grilla2" title="Registros">
 
 	</div>
-		<div id="grilla_mapa" title="Datos">
+			<div id="grilla_mapa" title="Datos">
 <div id="map">
   </div>
+	</div>
+		<div id="output">	
+
 	</div>
 <script>
 	var CM_farma_turno=false;

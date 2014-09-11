@@ -23,9 +23,10 @@ function OpenModal2()
 function mapaTrabajadores()
 {
 	
+	
 	limpiarMapa();
 	
-	$("#resultado").load("query.php", 
+	$("#output").load("query.php", 
 		{tipo:6} 
 	,function(){	
 		 OpenModalMapa();

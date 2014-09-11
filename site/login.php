@@ -53,7 +53,7 @@ cerrar_sesion_web();
 	}else
 	{
 		
-		
+		$("#msg_error").html("<img src=img/load.GIF>");
 		$("#msg_error").load("query.php", 
 			{tipo:2, clave:""+clave+"", mail:""+mail+""} 
 				,function(){	
